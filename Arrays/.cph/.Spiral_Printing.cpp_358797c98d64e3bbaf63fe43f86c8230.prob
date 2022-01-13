@@ -1,0 +1,1 @@
+{"name":"Local: Spiral_Printing","url":"d:\\C++ Files\\Arrays\\Spiral_Printing.cpp","tests":[{"id":1616695845187,"input":"2 3\n45 56 67\n78 89 90","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ Files\\Arrays\\Spiral_Printing.cpp","group":"local","local":true}

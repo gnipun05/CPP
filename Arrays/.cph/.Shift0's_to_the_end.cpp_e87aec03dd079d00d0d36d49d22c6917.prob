@@ -1,0 +1,1 @@
+{"name":"Local: Shift0's_to_the_end","url":"d:\\C++ Files\\Arrays\\Shift0's_to_the_end.cpp","tests":[{"id":1624872507889,"input":"6\n1 0 4 0 0 5","output":""},{"id":1624872654873,"input":"5\n0 0 0 9 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ Files\\Arrays\\Shift0's_to_the_end.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: N-Bonacci","url":"d:\\C++ Files\\Arrays\\N-Bonacci.cpp","tests":[{"id":1624987661364,"input":"3 8","output":"13"},{"id":1624988063606,"input":"4 10","output":"29"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ Files\\Arrays\\N-Bonacci.cpp","group":"local","local":true}

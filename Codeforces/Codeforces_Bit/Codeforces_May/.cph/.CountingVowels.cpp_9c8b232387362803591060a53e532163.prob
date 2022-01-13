@@ -1,0 +1,1 @@
+{"name":"Local: CountingVowels","url":"d:\\C++ Files\\Codeforces_May\\CountingVowels.cpp","tests":[{"id":1620847789024,"input":"5\nxyaez\n5\n1 1 5\n1 2 3\n2 2 i\n1 2 4\n2 1 a","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ Files\\Codeforces_May\\CountingVowels.cpp","group":"local","local":true}

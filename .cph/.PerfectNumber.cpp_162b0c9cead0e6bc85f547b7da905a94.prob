@@ -1,0 +1,1 @@
+{"name":"Local: PerfectNumber","url":"d:\\C++ Files\\PerfectNumber.cpp","tests":[{"id":1621143669270,"input":"7\n1\n2\n6\n13\n14\n3620\n10000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ Files\\PerfectNumber.cpp","group":"local","local":true}

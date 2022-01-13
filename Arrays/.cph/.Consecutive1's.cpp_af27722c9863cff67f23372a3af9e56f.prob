@@ -1,0 +1,1 @@
+{"name":"Local: Consecutive1's","url":"d:\\C++ Files\\Arrays\\Consecutive1's.cpp","tests":[{"id":1624952912426,"input":"7\n1 1 1 1 1 1 1","output":""},{"id":1624953185730,"input":"7\n0 1 1 0 1 1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ Files\\Arrays\\Consecutive1's.cpp","group":"local","local":true}

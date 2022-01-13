@@ -1,0 +1,1 @@
+{"name":"Local: Palindrome","url":"d:\\C++ Files\\Character_Array\\Palindrome.cpp","tests":[{"id":1616759576086,"input":"6\nacbbca","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C++ Files\\Character_Array\\Palindrome.cpp","group":"local","local":true}
