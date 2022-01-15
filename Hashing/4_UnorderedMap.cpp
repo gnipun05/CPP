@@ -32,7 +32,7 @@ int main()
     else
         cout << "Not Found" << endl;
 
-    if(m.count("efg"))
+    if(m.count("efg")) // This function returns 1 if there exists a value in the map with the given key, otherwise it returns 0
         cout << "Found" << endl;
     else
         cout << "Not Found" << endl;
