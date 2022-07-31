@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
     string s="mississippi";
-    cout << s.find("ssi"); // prints 2
+    cout << s.find("ssi") << endl; // prints 2
+    cout << (s.find("abc")==string::npos);  // prints 1(true); since s doesn't have abc in it, find will return value string::npos
     return 0;
 }

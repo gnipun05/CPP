@@ -4,7 +4,7 @@ using namespace std;
 
 bool detect (vector <int> adj[], int s, int v, bool visited[]){
     vector<int>parent(v,-1);
-    queue<int> q;
+    queue<int> q; // instead of making a new parent array, we can instead make a pair in Queue storing the present and its parent vertices
     q.push(s);
     visited[s]=true;
     while(q.empty()==false){

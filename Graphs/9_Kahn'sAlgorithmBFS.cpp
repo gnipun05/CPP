@@ -1,5 +1,5 @@
 // Kahn's Algorithm of Topological Sorting
-// This algorithm works only if the graph is Acyclic
+// This algorithm works only if the graph is Acyclic and Directed
 
 #include <bits/stdc++.h>
 #define endl '\n'

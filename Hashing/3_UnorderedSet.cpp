@@ -52,7 +52,7 @@ int main()
     
     s.erase(15); // Now, s.size() will give 3
     
-    auto it = s.find(10);
+    unordered_set<int>::iterator it = s.find(10);
     s.erase(it); // Now, s.size() will give 2
 
     s.erase(s.begin(), s.end()); // works as s.clear(); s.size() will give 0
