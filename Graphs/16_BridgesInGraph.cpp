@@ -42,7 +42,7 @@ int main()
     vector<int> tin(n, -1);
     vector<int> low(n, -1);
     for(int i=0; i<n; i++)
-        if(visited[i])
+        if(!visited[i])
             dfs(i, -1, adj, visited, tin, low, 0);
     return 0;
 }

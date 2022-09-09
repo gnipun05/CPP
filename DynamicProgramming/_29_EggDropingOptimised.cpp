@@ -13,8 +13,6 @@ public:
             return f;
         if(e==0)
             return 0;
-        // if(dp[e][f]!=-1)
-        //     return dp[e][f];
         int mn=INT_MAX;
         int l=1, r=f;
         while(l<=r){

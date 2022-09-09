@@ -1,18 +1,19 @@
 // this algorithm can generate an mst for all the disconnected components of the graph
+// time complexity : O(E*log(V))
 #include<bits/stdc++.h>
 using namespace std;
-struct node {
+struct edge { // originally it was named node, changed it to edge because made a little more sense to me
     int u;
     int v;
     int wt; 
-    node(int first, int second, int weight) {
+    edge(int first, int second, int weight) {
         u = first;
         v = second;
         wt = weight;
     }
 };
 
-bool comp(node a, node b) {
+bool comp(edge a, edge b) {
     return a.wt < b.wt; 
 }
 
@@ -35,14 +36,15 @@ void unionn(int u, int v, vector<int> &parent, vector<int> &rank) {
     	rank[u]++; 
     }
 }
+
 int main(){
 	int N,m;
 	cin >> N >> m;
-	vector<node> edges; 
+	vector<edge> edges; 
 	for(int i = 0;i<m;i++) {
 	    int u, v, wt;
 	    cin >> u >> v >> wt; 
-	    edges.push_back(node(u, v, wt)); 
+	    edges.push_back(edge(u, v, wt)); 
 	}
 	sort(edges.begin(), edges.end(), comp); 
 	

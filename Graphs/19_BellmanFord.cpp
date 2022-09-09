@@ -2,9 +2,9 @@
 // To apply this algorithm on Undirected Graphs, we need to convert each undrirected edge into 2 directed edges
 // Directed Graphs-> algo works for +ve and -ve edges (but not if negative cycles are present)
 // Undirected Graphs ->algo works only if all edges are +ve
-// Time Complexity: O(N-1)*O(E) -> which is very bad in comparison to Dijstra's Algo
+// Time Complexity: O(N-1)*(E) -> which is very bad in comparison to Dijstra's Algo
  
-// This algo gives us the disatance from source node to all the reachabel nodes in the Graph
+// This algo gives us the distance from source node to all the reachable nodes in the Graph
 // In this Algo we will relax all the edges for N-1 times. And if even after doing so, an edge gets relaxed, then
 // it means there is a Cycle present in the Graph
 
@@ -49,7 +49,7 @@ int main(){
     cin>>src;
     dist[src]=0;
 
-    for(int i=0; i<N; i++){ // loop will run for N-1 times
+    for(int i=1; i<N; i++){ // loop will run for N-1 times
         for(auto it:edges)
             if(dist[it.u]!=INT_MAX && dist[it.v]>dist[it.u]+it.wt) // if found tense, we relax that edge
                 dist[it.v]=dist[it.u]+it.wt;
@@ -57,11 +57,11 @@ int main(){
 
     bool flag=true;
     for(auto it:edges) // if it is found to be tensed even after N-1 
-            if(dist[it.u]!=INT_MAX && dist[it.v]>dist[it.u]+it.wt){
-                cout<<"Negative Cycle"<<endl;
-                flag=false;
-                break;
-            }
+        if(dist[it.u]!=INT_MAX && dist[it.v]>dist[it.u]+it.wt){
+            cout<<"Negative Cycle"<<endl;
+            flag=false;
+            break;
+        }
     
     if(flag)
         for(int i=0; i<N; i++)

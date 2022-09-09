@@ -1,7 +1,7 @@
 // Kosaraju's Algorithm for Strongly Connected Components (SCC) {for Directed Graphs}
 // first find the Topological Sort of the Graph
 // then transpose the graph
-// and finally traverse the graph in dfs as per the topological order, which was found in the beginning
+// and finally traverse the transposed graph in dfs as per the topological order, which was found in the beginning
 #include <bits/stdc++.h>
 typedef long long ll;
 typedef long double ld;
@@ -54,7 +54,7 @@ int main()
     vector<int> transpose[n];
     // storing transpose of the graph
     for(int i=0; i<n; i++){
-        visited[i]=true;
+        visited[i]=false; // making visited to store all values as false
         for(int it:adj[i])
             transpose[it].push_back(i);
     }

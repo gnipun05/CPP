@@ -19,16 +19,20 @@ struct Node{
 
 vi inorderTraversal(Node* root){
     vi answer;
-    stack<Node*> s;
+    stack<Node*> st;
     Node *curr=root;
-    while(curr!=NULL || s.empty()==false){
-        while(curr!=NULL){
-            s.push(curr);
-            curr->left;
+    while(true){
+        if(curr!=NULL){
+            st.push(curr);
+            curr=curr->left;
         }
-        curr=s.top();s.pop();
-        answer.pb(curr->val);
-        curr=curr->right;
+        else{
+            if(st.empty())
+                break;
+            curr=st.top(); st.pop();
+            answer.pb(curr->val);
+            curr=curr->right;
+        }
     }
     return answer;
 }
